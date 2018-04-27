@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<!-- entête du document -->
+<head>
+	<meta charset="UTF-8"/> 
+	<title>Home</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Site.css">
+</head>
+<body>
+<h1 class="titre">Ajouter un livre</h1><hr class="hr1">
+<div class="container">
+    <form class="form-horizontal" method="post" action="Ajoutlivre.php">
+        <div class="form-group">
+        <div class="col-md-1"></div>
+            <label class="col-md-4 control-label">
+                ISBN
+            </label>
+            <div class="col-md-3">
+                <input name="isbn" required autofocus type="text" class="form-control"/> 
+            </div>
+        </div>
+            <div class="form-group">
+            <div class="col-md-1"></div>
+                <label class="col-md-4 control-label">
+                    Titre
+                </label>
+                <div class="col-md-3">
+                    <input name="titre" required type="text" class="form-control"/> 
+                </div>
+        </div>
+        <div class="form-group">
+        <div class="col-md-1"></div>
+            <label class="col-md-4 control-label">
+                Auteur
+            </label>
+            <div class="col-md-3">
+                <input name="auteur" required autofocus type="text" class="form-control"/> 
+            </div>
+        </div>
+            <div class="form-group">
+            <div class="col-md-1"></div>
+                <label class="col-md-4 control-label">
+                    Editeur
+                </label>
+                <div class="col-md-3">
+                    <input name="editeur" required type="text" class="form-control"/> 
+                </div>
+        </div>
+        <div class="form-group">
+        <div class="col-md-1"></div>
+            <label class="col-md-4 control-label">
+                Année
+            </label>
+            <div class="col-md-3">
+                <input name="annee" required autofocus type="text" class="form-control"/> 
+            </div>
+        </div>
+        <div class="form-group">
+        <div class="col-md-1"></div>
+
+                <label class="col-md-4 control-label">
+                    Joindre une image
+                </label>
+                <div class="col-md-3">
+                    <input name="photo" type="file">
+                </div>
+            </div>
+        <!--Statut disponible-->
+        <div class="form-group">
+        <div class="col-md-1"></div>
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-3">
+                    <input type="submit" class="form-control"/>                
+                </div>
+        </div>
+        
+    </form>
+</div>
+</body>
+</html>

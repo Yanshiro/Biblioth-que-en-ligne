@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<!-- entête du document -->
+<head>
+	<meta charset="UTF-8"/> 
+	<title>Home</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Site.css">
+</head>
+<body>
+<h1 class="titre">S'inscrire</h1><hr class="hr1">
+<div class="container">
+    <form class="form-horizontal" method="post" action="Inscription.php">
+        <div class="form-group">
+        <div class="col-md-1"></div>
+            <label class="col-md-4 control-label">
+                Numéro étudiant
+            </label>
+            <div class="col-md-3">
+                <input name="NumEt" required autofocus type="text" class="form-control" pattern="[0-9]{1}.{0,}" title="Numéro uniquement"/> 
+            </div>
+        </div>
+            <div class="form-group">
+            <div class="col-md-1"></div>
+                <label class="col-md-4 control-label">
+                    Mot de passe
+                </label>
+                <div class="col-md-3">
+                    <input name="MotdePass" required type="password" class="form-control"/> 
+                </div>
+        </div>
+        <div class="form-group">
+        <div class="col-md-1"></div>
+            <label class="col-md-4 control-label">
+                Nom
+            </label>
+            <div class="col-md-3">
+                <input name="Nom" required autofocus type="text" class="form-control"/> 
+            </div>
+        </div>
+            <div class="form-group">
+            <div class="col-md-1"></div>
+                <label class="col-md-4 control-label">
+                    Prénom
+                </label>
+                <div class="col-md-3">
+                    <input name="Prenom" required type="text" class="form-control"/> 
+                </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-1"></div>
+                <label class="col-md-4 control-label">
+                    Date de naissance
+                </label>
+                <div class="col-md-3">
+                    <input name="ddn" required type="date" class="form-control"/> 
+                </div>
+        </div>
+        <div class="form-group">
+        <div class="col-md-1"></div>
+            <label class="col-md-4 control-label">
+                Adresse
+            </label>
+            <div class="col-md-6">
+                <input name="Adresse"  required autofocus type="text" class="form-control"/> 
+            </div>
+        </div>
+            <div class="form-group">
+            <div class="col-md-1"></div>
+                <label class="col-md-4 control-label">
+                    Email
+                </label>
+                <div class="col-md-3">
+                    <input name="Email" required type="text" class="form-control" /> 
+                </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-1"></div>
+                <label class="col-md-4 control-label">
+                    Numéro de téléphone
+                </label>
+                <div class="col-md-3">
+                    <input name="NumTel" required type="text" class="form-control" /> 
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">
+                Joindre une image
+            </label>
+            <div class="col-md-3">
+                <input name="Photo" type="file">
+            </div>
+        </div>
+    
+        <div class="form-group">
+        <div class="col-md-1"></div>
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-3">
+                    <input type="submit" class="form-control"/>                
+                </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

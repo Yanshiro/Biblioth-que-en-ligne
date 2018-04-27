@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<!-- entête du document -->
+<head>
+	<meta charset="UTF-8"/> 
+	<title>Home</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Site.css">
+</head>
+<body>
+<h1 class="titre">Se connecter</h1><hr class="hr1">
+<div class="container">
+    <form class="form-horizontal" method="post" action="Connexion.php">
+        <div class="form-group">
+        <div class="col-md-1"></div>
+            <label class="col-md-4 control-label">
+                Identifiant
+            </label>
+            <div class="col-md-3">
+                <input name="identifiant" required autofocus type="text" class="form-control"/> 
+            </div>
+        </div>
+            <div class="form-group">
+            <div class="col-md-1"></div>
+                <label class="col-md-4 control-label">
+                    Mot de passe
+                </label>
+                <div class="col-md-3">
+                    <input name="motdepass" required type="password" class="form-control"/> 
+                </div>
+        </div>
+        <div class="form-group">
+        <div class="col-md-1"></div>
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-3">
+                    <input type="submit" class="form-control"/>                
+                </div>
+        </div>
+        
+        
+    </form>
+</div>
+</body>
+</html>
